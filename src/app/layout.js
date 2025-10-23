@@ -22,17 +22,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-zinc-900 text-zinc-100 selection:bg-black-600/40`}
       >
-        <div className="flex flex-col min-h-screen">
-          <header className="px-6 py-4 border-b border-zinc-800 text-zinc-300 tracking-tight text-sm uppercase">
-            Local RAG Interface
-          </header>
-
-          <main className="flex-1">{children}</main>
-          
-          <footer className="px-6 py-3 border-t border-zinc-800 text-xs text-zinc-500 text-center">
-            built locally by patrick sullivan - powered by ollama
-          </footer>
-        </div>
+        {children}
       </body>
     </html>
   );

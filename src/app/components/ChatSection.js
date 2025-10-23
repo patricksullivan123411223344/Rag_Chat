@@ -33,7 +33,7 @@ export default function ChatSection() {
       ]);
     }
   };
-
+  
   return (
     <div className="flex justify-center items-center min-h-screen bg-zinc-900 text-white">
       <div className="flex flex-col w-full max-w-3xl h-[80vh] bg-zinc-900 border border-zinc-800 rounded-2xl shadow-xl overflow-hidden">
