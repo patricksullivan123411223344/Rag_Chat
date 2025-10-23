@@ -1,36 +1,14 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+RAG Chat Project (JSX + Python)
 
-## Getting Started
+Overview:
+This is a lighweight Retrieval-Augmented Generation (RAG) chat tool using a Next frontend and a Python backend. The goal is to create a local, privacy focused AI assistant that can read your Obsidian notes, embed them, and query them through a locally hosted Ollama model (Tinyllama 1.1B for light compute). 
 
-First, run the development server:
+Tech Stack:
+For the frontend, I decided to use the Next.js framework styled with Tailwind + Framer Motion for animations. The backend uses the FastAPI framework and ChromaDB vector store all wired together with Python. The Ollama model uses my local Obsidian vault as a knowledge base. 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Running the Project:
+1. Start the Backend: "cd backend" --> "pip install -r requirements.txt" --> "python app.py"
+2. Start the Frontend: "cd frontend" --> "npm install" --> "npm run dev"
+3. Env Variables: Create a .env file in your backend directory. Be sure to include your "OBSIDIAN_PATH = <>" "MODEL_NAME = <>" "VECTOR_DB=chroma"
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Enjoy!
