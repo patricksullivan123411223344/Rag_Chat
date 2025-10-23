@@ -9,6 +9,6 @@ For the frontend, I decided to use the Next.js framework styled with Tailwind + 
 Running the Project:
 1. Start the Backend: "cd backend" --> "pip install -r requirements.txt" --> "python app.py"
 2. Start the Frontend: "cd frontend" --> "npm install" --> "npm run dev"
-3. Env Variables: Create a .env file in your backend directory. Be sure to include your "OBSIDIAN_PATH = <>" "MODEL_NAME = <>" "VECTOR_DB=chroma"
+3. Env Variables: Create a .env file in your backend directory. Be sure to include your      "OBSIDIAN_PATH = <>" "MODEL_NAME = <>" "VECTOR_DB=chroma"
 
 Enjoy!
